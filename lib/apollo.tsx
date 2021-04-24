@@ -102,8 +102,7 @@ const initCache = (initialState?: any) => {
 
 function createApolloClient(initialState = {}) {
   const httpLink = new HttpLink({
-    uri: "http://192.168.29.219:4000/",
-    credentials: "same-origin",
+    uri: "https://graphql-quiz-api.herokuapp.com/",
     fetch: typeof window !== "undefined" && fetch
   });
 
